@@ -1,0 +1,3 @@
+# fake_axios4Java
+闲的没事用Java写的假axios工具
+目前只实现了Get方法，其他的还在考虑怎么去做优化
