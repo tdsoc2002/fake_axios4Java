@@ -6,9 +6,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class AxiosInstance {
-    private String baseUrl;
-    private Map<String, String> headers;
-    private int timeout;
+    private String baseUrl;//基础url
+    private Map<String, String> headers;//请求头
+    private int timeout;//超时时间
 
     public AxiosInstance(String baseUrl, Map<String, String> headers, int timeout) {
         this.baseUrl = baseUrl;

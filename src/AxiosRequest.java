@@ -1,9 +1,9 @@
 import java.util.Map;
 
 public class AxiosRequest {
-    private String method;
-    private String url;
-    private Map<String, String> headers;
+    private String method;//请求方法
+    private String url;//请求地址
+    private Map<String, String> headers;//请求头
     private Map<String, String> params; // 添加参数字段
 
     public AxiosRequest(String method, String url, Map<String, String> params, Map<String, String> headers) {

@@ -2,8 +2,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Main {
-
-
     public static void main(String[] args) {
         // 创建请求头
         Map<String, String> headers = new HashMap<>();
@@ -37,7 +35,7 @@ public class Main {
         // 打印响应内容
         System.out.println(response.getData());
         //获取文字内容
-        Map data = (Map) response.getData();
+        HashMap data = (HashMap) response.getData();
         System.out.println(data.get("hitokoto"));
     }
 }

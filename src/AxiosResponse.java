@@ -1,9 +1,9 @@
 import java.util.Map;
 
 public class AxiosResponse {
-    private int status;
-    private Map<String, String> headers;
-    private Object data;
+    private int status;//状态
+    private Map<String, String> headers;//返回头
+    private Object data;//返回体
 
     public AxiosResponse(int status, Map<String, String> headers, Object data) {
         this.status = status;
