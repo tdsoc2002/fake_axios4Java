@@ -27,9 +27,13 @@ public class Main {
         其他	作为 动画 类型处理
          */
         Map<String, String> params = new HashMap<>();
-        params.put("c", "c");
+        String url ="";
+//        params.put("c", "c");
         // 创建 Axios 请求
-        AxiosRequest request = new AxiosRequest("GET", "/?c={c}", params, null);
+        if (params.size()!=0) {
+            url ="?c={c}";
+        }
+        AxiosRequest request = new AxiosRequest("GET", "/"+url, params, null);
         // 发送请求
         AxiosResponse response = axios.request(request);
         // 打印响应内容
