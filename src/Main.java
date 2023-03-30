@@ -7,7 +7,7 @@ public class Main {
         Map<String, String> headers = new HashMap<>();
         headers.put("Content-Type", "application/json");
         // 创建 Axios 实例
-        AxiosInstance axios = new AxiosInstance("https://v1.hitokoto.cn", headers, 5000);
+        Axios axios = new Axios("https://v1.hitokoto.cn", headers, 5000);
         // 创建请求参数
         /*
         句子类型（参数）
